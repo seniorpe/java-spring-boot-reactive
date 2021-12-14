@@ -25,8 +25,8 @@ public class SwaggerConfiguration implements WebFluxConfigurer {
     }
 
     private ApiInfo apiInfo() {
-        return new ApiInfoBuilder().title("Reactive Stream Starter Demo")
-                .description("Reactive Stream Starter Demo")
+        return new ApiInfoBuilder().title("Reactive API")
+                .description("Reactive programming sample")
                 .version("1.0").build();
     }
 }

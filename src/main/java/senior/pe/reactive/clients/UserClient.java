@@ -12,7 +12,7 @@ import senior.pe.reactive.entities.models.User;
 @Component
 @Slf4j
 public class UserClient {
-	private WebClient client = WebClient.create("http://localhost:8080");
+	private WebClient client = WebClient.create("http://localhost:9090");
 
 	public Mono<User> getUser(String userId) {
 		return client.get().uri("/users/{userId}", userId).retrieve().bodyToMono(User.class).log(" User fetched ");
